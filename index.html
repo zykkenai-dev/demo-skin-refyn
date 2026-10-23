@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skin Refyn Clinic · Dr. Mamta Jain, Dermatologist · Bandra West, Mumbai</title>
+<meta name="description" content="Skin Refyn Clinic by Dr. Mamta Jain (MBBS, MD Skin, DVD) in Bandra West. 26 years in dermatology, trichology and cosmetology.">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3eee7;--paper:#faf7f2;--ink:#2e2520;--ink2:#6b5d54;--clay:#9a6a4f;--line:#ddd3c7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"General Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
+.logo{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.logo i{font-style:normal;color:var(--clay)}
+nav{display:flex;gap:34px;font-size:15px;color:var(--ink2)}
+nav a:hover{color:var(--ink)}
+.pill{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:999px;font-weight:500;font-size:15px;transition:.2s;white-space:nowrap}
+.pill.d{background:var(--ink);color:var(--paper)}.pill.d:hover{background:var(--clay)}
+.pill.o{border:1px solid var(--ink)}.pill.o:hover{background:var(--ink);color:var(--paper)}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:0;min-height:640px;border-top:1px solid var(--line)}
+.hero-l{padding:84px 64px 64px 0;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--line)}
+.tag{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);font-weight:500}
+h1{font-size:clamp(44px,6vw,86px);font-weight:500;line-height:.98;letter-spacing:-.045em;margin:24px 0 28px}
+.hero-l p{max-width:470px;color:var(--ink2);font-size:18px}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.meta{display:flex;gap:44px;margin-top:56px;padding-top:26px;border-top:1px solid var(--line)}
+.meta b{display:block;font-size:28px;font-weight:500;letter-spacing:-.03em}
+.meta span{font-size:14px;color:var(--ink2)}
+.hero-r{position:relative;overflow:hidden}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:110px 0;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1.6fr;gap:80px}
+h2{font-size:clamp(32px,3.6vw,52px);font-weight:500;letter-spacing:-.035em;line-height:1.04}
+.small{font-size:14px;color:var(--ink2);margin-top:18px;max-width:300px}
+.concerns{display:grid;grid-template-columns:1fr 1fr;column-gap:48px}
+.c{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+.c h3{font-size:21px;font-weight:500;letter-spacing:-.015em}
+.c span{font-size:14px;color:var(--ink2);text-align:right}
+.doc{background:var(--paper)}
+.doc .two{align-items:start}
+.portrait{aspect-ratio:3/4;border-radius:4px;overflow:hidden;background:#e5dccf}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.doc p.big{font-size:24px;line-height:1.45;letter-spacing:-.015em;margin:26px 0 40px;max-width:640px}
+.tl div{display:grid;grid-template-columns:90px 1fr;padding:16px 0;border-top:1px solid var(--line);font-size:16px}
+.tl div b{font-weight:500;color:var(--clay)}
+.mem{margin-top:30px;font-size:14px;color:var(--ink2)}
+.say{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px}
+.say blockquote{font-size:19px;line-height:1.5;letter-spacing:-.01em}
+.say cite{display:block;font-style:normal;font-size:13px;color:var(--ink2);margin-top:18px;letter-spacing:.06em;text-transform:uppercase}
+.visit{background:var(--ink);color:var(--paper)}
+.visit .two{align-items:end}
+.visit h2{color:var(--paper)}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.vgrid h4{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#c9a48d;font-weight:500;margin-bottom:12px}
+.vgrid p{color:#e8e0d6}
+.visit .pill.d{background:var(--paper);color:var(--ink)}.visit .pill.o{border-color:var(--paper)}
+.visit .pill.o:hover{background:var(--paper);color:var(--ink)}
+footer{background:var(--ink);color:#a8998d;font-size:14px;border-top:1px solid #4a3d35}
+footer .wrap{display:flex;justify-content:space-between;padding:28px 32px;flex-wrap:wrap;gap:12px}
+.mbar{display:none}
+@media(max-width:960px){
+ nav{display:none}header .pill{display:none}
+ .hero{grid-template-columns:1fr;min-height:0}
+ .hero-l{padding:48px 0 40px;border-right:0}
+ .hero-r{height:420px}
+ .meta{gap:28px;margin-top:36px;flex-wrap:wrap}
+ section{padding:70px 0}
+ .two{grid-template-columns:1fr;gap:36px}
+ .concerns{grid-template-columns:1fr}
+ .say{grid-template-columns:1fr;gap:30px}
+ .vgrid{grid-template-columns:1fr;gap:26px}
+ .portrait{aspect-ratio:4/3}
+ footer{padding-bottom:84px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;bottom:0;left:0;right:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(243,238,231,.96);border-top:1px solid var(--line);z-index:20}
+ .mbar .pill{justify-content:center}
+}
+@media(max-width:420px){.wrap{padding:0 20px}h1{font-size:46px}.doc p.big{font-size:20px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="logo" href="#">Skin Refyn<i>.</i></a>
+ <nav><a href="#concerns">Concerns</a><a href="#doctor">Dr. Mamta Jain</a><a href="#visit">Visit</a></nav>
+ <a class="pill d" href="https://wa.me/919322270698?text=Hello%2C%20I%27d%20like%20an%20appointment%20with%20Dr.%20Mamta%20Jain.">Book a consultation</a>
+</div></header>
+
+<div class="wrap hero">
+ <div class="hero-l">
+  <div>
+   <div class="tag">Dermatology · Trichology · Cosmetology</div>
+   <h1>Skin, hair and scar care in Bandra West.</h1>
+   <p>Skin Refyn Clinic is Dr. Mamta Jain's practice. She's an MD dermatologist with 26 years of experience, and patients come back to her for decades.</p>
+   <div class="acts">
+    <a class="pill d" href="https://wa.me/919322270698?text=Hello%2C%20I%27d%20like%20an%20appointment%20with%20Dr.%20Mamta%20Jain.">WhatsApp to book</a>
+    <a class="pill o" href="tel:+919322270698">+91 93222 70698</a>
+   </div>
+  </div>
+  <div class="meta">
+   <div><b>26 yrs</b><span>in practice</span></div>
+   <div><b>4.9</b><span>104 Google reviews</span></div>
+   <div><b>MD · DVD</b><span>Skin & venereology</span></div>
+  </div>
+ </div>
+ <div class="hero-r"><img src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1200&q=75&auto=format&fit=crop" alt="Dermatology skin treatment in a clinic"></div>
+</div>
+
+<section id="concerns"><div class="wrap two">
+ <div><h2>What patients come in for</h2><p class="small">Not sure where your concern fits? Send a photo on WhatsApp and the clinic will guide you.</p></div>
+ <div class="concerns">
+  <div class="c"><h3>Acne scars</h3><span>Scar treatment</span></div>
+  <div class="c"><h3>Keloids & raised scars</h3><span>Non-surgical</span></div>
+  <div class="c"><h3>Hair fall & alopecia</h3><span>Trichology, PRP</span></div>
+  <div class="c"><h3>Anti-ageing & wrinkles</h3><span>Cosmetology</span></div>
+  <div class="c"><h3>Pigment & vitiligo</h3><span>Medical dermatology</span></div>
+  <div class="c"><h3>Skin allergies</h3><span>Diagnosis & care</span></div>
+  <div class="c"><h3>Warts</h3><span>Removal</span></div>
+  <div class="c"><h3>Laser hair removal</h3><span>Aesthetic</span></div>
+ </div>
+</div></section>
+
+<section id="doctor" class="doc"><div class="wrap two">
+ <div class="portrait"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=900&q=75&auto=format&fit=crop" alt="Skin consultation"></div>
+ <div>
+  <div class="tag">The doctor</div>
+  <h2 style="margin-top:18px">Dr. Mamta Jain</h2>
+  <p class="big">Dermatologist, trichologist and cosmetologist. Twenty of her 26 years have been as a specialist, and she's known for clear, honest advice.</p>
+  <div class="tl">
+   <div><b>2000</b><span>MBBS, Dr. D.Y. Patil University, Navi Mumbai</span></div>
+   <div><b>2005</b><span>MD, Skin Diseases, Grant Medical College & Sir J.J. Hospital</span></div>
+   <div><b>2005</b><span>DVD, College of Physicians & Surgeons of Bombay</span></div>
+  </div>
+  <p class="mem">Member, IADVL · CDSI</p>
+ </div>
+</div>
+<div class="wrap say">
+ <blockquote>"Been more than 20 years I am associated with Dr. Mamta. She gives clear and genuine advice and treats accordingly."<cite>Google review</cite></blockquote>
+ <blockquote>"I found a dermatologist that can see me anytime without waiting for weeks."<cite>Google review</cite></blockquote>
+ <blockquote>"Her expert care significantly reduced my hair fall and improved my skin."<cite>Google review</cite></blockquote>
+</div></section>
+
+<section id="visit" class="visit"><div class="wrap two">
+ <div><h2>Visit Skin Refyn</h2>
+  <div class="acts"><a class="pill d" href="https://wa.me/919322270698">WhatsApp</a><a class="pill o" href="mailto:skinrefynclinic@gmail.com">Email the clinic</a></div>
+ </div>
+ <div class="vgrid">
+  <div><h4>Address</h4><p>Flat 5, 1st floor, Little Hut Society, 27th Road, next to Punjab National Bank, opp. Shoppers Stop, Bandra West, Mumbai 400050</p><p style="margin-top:14px"><a href="https://www.google.com/maps/search/?api=1&query=19.061671,72.835306" style="text-decoration:underline">Open in Google Maps</a></p></div>
+  <div><h4>Hours</h4><p>Monday – Saturday<br>11:00 AM – 6:00 PM</p><p style="margin-top:14px">Sunday closed</p><h4 style="margin-top:26px">Call</h4><p><a href="tel:+919322270698">+91 93222 70698</a></p></div>
+ </div>
+</div></section>
+<footer><div class="wrap"><span>© Skin Refyn Clinic, Bandra West</span><span>Demo concept by <a href="https://zykken.com" style="text-decoration:underline">Zykken</a></span></div></footer>
+<div class="mbar"><a class="pill o" href="tel:+919322270698">Call</a><a class="pill d" href="https://wa.me/919322270698">WhatsApp</a></div>
+</body></html>
